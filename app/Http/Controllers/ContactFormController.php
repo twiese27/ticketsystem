@@ -17,7 +17,7 @@ class ContactFormController extends Controller
         {
             dd($user->last_name);
         } */
-        return view('welcome');
+        return view('auth.login');//admin wäre die standard laravel seite
     }
 
 

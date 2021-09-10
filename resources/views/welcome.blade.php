@@ -13,8 +13,9 @@
     </head>
     <body>
         <div id="app" class="container-fluid">
+            
             <div>
-                <example-component></example-component>
+                <frontend-component></frontend-component>
             </div>
         </div>
  

@@ -1,25 +1,15 @@
 <template>
     <div class="container">
-        <p style="color: red;">testtext</p>
-        <form>
-            <button style="background-color: #0000ff; /* Green */
-                                                border: none;
-                                                color: white;
-                                                padding: 15px 32px;
-                                                text-align: center;
-                                                text-decoration: none;
-                                                display: inline-block;
-                                                font-size: 16px; margin-bottom: 20px;">Drück mich
-            </button>
-        </form>
-        <form>
-            <button variant='danger' type="button" class="btn btn-primary" style="margin-bottom: 20px;">Drück mich mit Bootstrap</button>
-        </form>
-        <div>
-            <b-button>Button</b-button>
-            <b-button variant="danger">Button</b-button>
-            <b-button variant="success">Button</b-button>
-            <b-button variant="outline-primary">Button</b-button>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Example Component</div>
+
+                    <div class="card-body">
+                        I'm an example component.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -30,6 +20,4 @@
             console.log('Component mounted.')
         }
     }
-    import { ButtonPlugin } from 'bootstrap-vue'
-    Vue.use(ButtonPlugin)
 </script>

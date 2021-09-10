@@ -88,6 +88,16 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    'recipients' => [
+        '1' => 'tjade.wiese@vierol.de',
+        '2' => 'tjade.wiese@vierol.de',
+        '3' => 'tjade.wiese@vierol.de'
+    ],
+    /* 'reply_to' => [
+        'address' => env('tjade.wiese@vierol.de'),
+        'name' => env('TEST'),
+    ], */
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings

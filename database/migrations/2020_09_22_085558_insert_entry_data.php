@@ -1,6 +1,7 @@
 <?php
 
 use App\Entry;
+use App\Category;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -15,6 +16,8 @@ class InsertEntryData extends Migration
     public function up()
     {
         Entry::create([
+            'ticketnumber' => '012DDD78JT',
+
             'first_name' => 'René',
 
             'last_name' => 'Spengel',
@@ -23,9 +26,13 @@ class InsertEntryData extends Migration
 
             'email' => 'rené.spengel@vierol.de',
 
-            'topic' => 'technischer Support',
+            'category_id' => 1,
 
-            'text' => 'Hallo, ich habe ein Problem mit meinem Rechner, könnt ihr mir bitte helfen?'
+            'text' => 'Hallo, ich habe ein Problem mit meinem Rechner, könnt ihr mir bitte helfen?',
+
+            'status_id' => 1,
+
+            'link' => 'https://www.ticketsystem.de/AAAAAAAAA1'
         ]);
     }
 

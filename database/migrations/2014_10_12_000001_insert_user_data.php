@@ -16,12 +16,12 @@ class InsertUserData extends Migration
     {
         User::create([
             'first_name' => 'Tjade',
-            
+
             'last_name' => 'Wiese',
 
             'email' => 'tjade.wiese@vierol.de',
 
-            'password' => 'password'
+            'password' => '$2y$10$XtRyekYS0EYVdvxjHCvilu9yUAE44uTXWwz8AT7d4XbzDJlkLAYJ2'
         ]);
     }
 

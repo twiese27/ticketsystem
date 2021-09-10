@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,15 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('category', 'API\CategoryController');
+
+Route::apiResource('entry', 'API\EntryController');
+
+Route::apiResource('answer', 'API\AnswerController');
+
+Route::apiResource('statusoptions', 'API\StatusoptionController');
+
+Route::apiResource('ticket', 'API\TicketController');
+
+Route::apiResource('ticketinfo', 'API\TicketinfoController');
